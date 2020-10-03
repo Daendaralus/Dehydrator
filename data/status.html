@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+    <head>
+        <title>De-Danking dehybdrator 1.0</title>
+        <link rel="icon" href="https://docs.google.com/uc?id=1Ldu1Y582r-9EkHLY7ISTvIAX64wfHDpS&export=download" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css" type="text/css">
+        <script type="text/javascript" src="https://docs.google.com/uc?id=1IZSPiuVTIX2mamz5eG2GZ-Auoi6Au2d5&export=download"></script>
+        <link rel="stylesheet" href="jquery.ui.timepicker.css" type="text/css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script type="text/javascript" src="status.js"></script><!--https://docs.google.com/uc?id=1FdtRv68PFr1CHJBVF0ChZlmtoM6lYzQQ&export=download"></script>-->
+    </head>
+    <body  onkeypress="handleEnter(event)">
+        <h1><u>Dehydrator</u></h1>
+        <table style="width: 120px;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 60px;">Temperature</td><td style="width: 60px;" >Humidity</td><td style="width: 60px;" >PWM</td><td style="width: 60px;" >Fans</td><td style="width: 60px;" >Time</td>
+                </tr>
+                <tr>
+                    <td class="temp-value" style="width: 60px;">x</td><td class="humid-value" style="width: 60px;">x</td><td class="pwm-value" style="width: 60px;">x</td><td class="fan-value" style="width: 60px;">x</td><td class="time-value" style="width: 60px;">x</td>
+                </tr>
+        </tbody>
+        </table>
+            Target temperature: <input type="text"  class="temptarget" autocomplete="off" /></br>
+            PWM Frequency: <input type="text"  class="pwmfreq" autocomplete="off" /></br>
+            <input class="submit-target" id="timespanbuttons" type="button" value="On" onclick="turnHeatOn();" />
+            <input class="submit-target" id="timespanbuttons" type="button" value="Off" onclick="turnHeatOff();" />
+            <input class="submit-target" id="timespanbuttons" type="button" value="Update" onclick="updateHeat();" />
+            <input class="submit-target" id="timespanbuttons" type="button" value="Toggle Fan" onclick="toggleFan();" />
+        </p>
+        <h1 style="clear:both;margin-top:100px"><u>DEBUG STUFF</u></h1>
+        <p id="status">
+            <textarea class="status-box" readonly rows="10" style="width:100%"></textarea>
+        </p>
+        <p>
+            <input class="serial-input" name="serial"/>
+        </p>
+    </body>
+</html>
+    

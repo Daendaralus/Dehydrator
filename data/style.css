@@ -1,0 +1,93 @@
+html[data-theme='dark'] {
+    --hue: 85; /* Blue */
+    --accent-hue: 25; /* Orange */
+    --text-color-normal: hsl(var(--hue), 10%, 62%);
+    --text-color-light: hsl(var(--hue), 15%, 35%);
+    --text-color-richer: hsl(var(--hue), 50%, 72%);
+    --text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
+    --link-color: hsl(var(--hue), 90%, 70%);
+    --accent-color: hsl(var(--accent-hue), 100%, 70%);
+    --error-color: rgb(240, 50, 50);
+    --button-background: hsl(var(--hue), 33%, 43%);
+    --button-text-color: hsl(var(--hue), 13%, 0%);
+    --background: hsl(var(--hue), 20%, 12%);
+    --background-light: hsl(var(--hue), 20%,17%);
+    background: var(--background);
+    color: var(--text-color-normal);
+    text-decoration-color: var(--link-color);
+  }
+
+  input, textarea, select {
+      background:var(--background-light);
+      color:var(--text-color-normal);
+
+  }
+
+  table{
+      border-collapse: collapse;
+      border: 2px solid var(--text-color-light);
+      /* background:var(--background-light); */
+  }
+
+
+  input[type="button"] {
+    background: var(--button-background);
+    color:var(--button-text-color);
+}
+
+.daterangepicker{
+    filter:invert(86%);
+}
+select[name="StateSelect"]{
+  width:auto;
+}
+
+select{
+  width:90%;
+}
+
+
+
+#ConfigTimes{
+  float:left;
+  width: 20%;
+}
+
+#ConfigData {
+  
+  float:left;
+  width:60%;
+}
+
+#status{
+  clear:both;
+  margin-bottom :0;
+}
+
+#timespanbuttons{
+  float:left;
+  margin-top: 15px;
+  margin-right:5px;
+
+}
+#datebuttons{
+  float:left;
+  margin-top: 20px;
+  margin-right:5px;
+}
+
+#ConfigDates{
+  clear: both;
+  float:left;
+  width:40%;
+}
+
+#DatesData{
+  float:left;
+}
+
+#configmirror{
+  margin-top:5px;
+  margin-bottom:5px;
+
+}
